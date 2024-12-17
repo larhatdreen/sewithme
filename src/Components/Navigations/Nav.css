@@ -1,0 +1,60 @@
+.overlay {
+    background: rgb(0, 0, 0, 0.2);
+    position: absolute;
+    width: 100%;
+    transition: 0.3s linear;
+    flex: 1;
+    z-index: 2;
+}
+
+.closeNav {
+    position: absolute;
+    right: 17px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.navContainer {
+    background-color: #fff;
+    width: 55%;
+    transition: 0.3s cubic-bezier(0.72, 0.2, 0.35, 1.02);
+    overflow: hidden;
+}
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    gap: 23px;
+}
+
+.Links a {
+    text-decoration: none;
+    color: #262626;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    /* gap: 5px; */
+}
+
+.navLine {
+    background-color: #7da2b5;
+    height: 2px;
+    width: 0;
+    transition: 0.2s linear;
+}
+
+.changeLanguage {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.changeLanguage p {
+    color: #7DA2B5;
+    text-wrap: nowrap;
+}

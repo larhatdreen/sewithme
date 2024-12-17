@@ -6,14 +6,35 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   en: {
     translation: {
-      welcome: "Welcome to our application!",
-      language: "Language"
+      login: "Login",
+      registration: "Registration",
+      loginText: '',
+      regitrationText: '',
     }
   },
   ru: {
     translation: {
-      welcome: "Добро пожаловать в наше приложение!",
-      language: "Язык"
+      login: "Вход",
+      registration: "Регистрация",
+      login_text: 'в личный кабинет',
+      regitration_text: 'Заполните форму для регистрации',
+      placeholder_email: 'Ваш e-mail',
+      placeholder_password: 'Ваш пароль',
+      offert: 'Отправляя форму, Вы даете согласие на обработку персональных данных согласно',
+      PC: 'политике конфиденциальности',
+      forgot_password: 'Забыли пароль?',
+      patterns: 'Выкройки',
+      video_tutorials: 'Видеоуроки',
+      articles: 'Статьи',
+      size_chart: 'Таблица размеров',
+      bonuses: 'Бонусы',
+      certificates: 'Сертификаты',
+      contacts: 'Контакты',
+      language: 'Язык',
+      oops: 'УПС! ЧТО-ТО ПОШЛО НЕ ТАК',
+      not_found: 'ЭТОЙ СТРАНИЦЫ НЕ СУЩЕСТВУЕТ',
+      back: 'Вернуться',
+      on_main_page: 'на главную страницу'
     }
   },
 };
@@ -27,7 +48,7 @@ i18n
     interpolation: {
       escapeValue: false, // React автоматически экранирует строки
     },
-    lng: localStorage.getItem('language') || 'en', // Получение языка из localStorage или 'en' по умолчанию
+    lng: localStorage.getItem('language') || 'ru', // Получение языка из localStorage или 'en' по умолчанию
     detection: {
       // Параметры для автоопределения языка
       order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],

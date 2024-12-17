@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content {
+    position: relative;
+}
+
+.mainContent {
+    padding: 40px 16px 50px 16px;
+}

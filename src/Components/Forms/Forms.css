@@ -1,0 +1,76 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formInput {
+    background: #fff;
+    border: 1px solid #262626;
+    border-radius: 100px;
+    padding: 16px 30px;
+    font-size: 16px;
+    flex: 1;
+    line-height: 11px;
+}
+
+.formInput:focus {
+    outline: none;
+    border-color: #578CA7;
+}
+
+.formInput::placeholder {
+    color: #a6a6a6;
+    line-height: 11px;
+}
+
+.offert{
+    padding-top: 5px;
+    font-size: 10px;
+    color: #262626;
+    cursor: default;
+}
+
+.offert span {
+    text-decoration: underline;
+    color: #7DA2B5;
+    cursor: pointer;
+}
+
+.forgotBtn {
+    color: #7DA2B5;
+    text-decoration: underline;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.formPassword {
+    display: flex;
+    position: relative;
+}
+
+.passwordHide {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hideAnimate {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    position: absolute;
+    right: 35px;    
+    border-radius: 25px;
+    top: 25px;
+    background: #578CA7;
+    z-index: 0;
+    width: 10px;
+    height: 0;
+    transition: 0.1s linear;
+
+}
