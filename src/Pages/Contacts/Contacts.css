@@ -1,0 +1,122 @@
+.contactsPage {
+    padding: 0 16px;
+}
+
+.titleContact {
+    text-align: center;
+    font-size: 32px;
+    color: #262626;
+    text-transform: uppercase;
+    padding: 50px 0 40px;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: #f4f4f2;
+    border: 1px solid #e3e3e3;
+    padding: 30px 25px;
+}
+
+.contactsContainer p {
+    font-size: 18px;
+}
+
+.ourSocials {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ourSocials h2, .contactWithUs h2 {
+    line-height: 17px;
+}
+
+.contactWithUs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mailto {
+    color: #578CA7;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.legalInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.legalInformation h2 {
+    line-height: 24px;
+}
+
+.aboutAuthorContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 96px;
+}
+
+.photoContainer {
+    border: 1px solid #3e5461;
+    width: 100%;
+    height: 433px;
+    overflow: hidden;
+    position: relative;
+    margin: 40px 0 80px 0;
+}
+
+.photo {
+    position: absolute;
+    top: 120px;
+    left: -20px;
+    width: 100%;
+    transform: scale(1.8);
+}
+
+.whereStyleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 25px;
+    border: 2px solid #A6A6A6;
+}
+
+.whereStyleContainer h2 {
+    text-align: center;
+}
+
+.whereStyleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.wsBlockTitle {
+    font-weight: 700;
+    color: #578CA7;
+    line-height: 11px;
+}
+
+.wsBlockText {
+    color: #262626;
+}
+
+.wsEndText {
+    font-size: 18px;
+    color: #262626;
+}
+
+.wsEndText span {
+    font-weight: 700;
+}
+
+.contactSaleContainer {
+    padding: 60px 0;
+}

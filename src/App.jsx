@@ -12,7 +12,7 @@ import Tutorials from './Pages/Tutorials/Tutorials';
 import Articles from './Pages/Articles/Articles';
 import SizeChart from './Pages/SizeChart/SizeChart';
 import Bonuses from './Pages/Bonuses/Bonuses';
-import Certificates from './Pages/Certificates/Certificates';
+// import Certificates from './Pages/Certificates/Certificates';
 import Contacts from './Pages/Contacts/Contacts';
 import NotFound from './Pages/NotFound/NotFound';
 
@@ -35,7 +35,7 @@ function App() {
           <Route path='articles' element={<Articles t={t} />} />
           <Route path='sizechart' element={<SizeChart t={t} />} />
           <Route path='bonuses' element={<Bonuses t={t} />} />
-          <Route path='certificates' element={<Certificates t={t} />} />
+          {/* <Route path='certificates' element={<Certificates t={t} />} /> */}
           <Route path='contacts' element={<Contacts t={t} />} />
           <Route path='*' element={<NotFound t={t} />} />
         </Route>

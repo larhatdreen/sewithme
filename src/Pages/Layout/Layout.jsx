@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Outlet, useNavigate } from 'react-router-dom';
 
 import './Layout.css'
 
 import Header from '../../Components/Header/Header';
 import MobileNav from '../../Components/Navigations/MobileNav';
 import Modal from '../../Components/Modal/Modal';
+import Footer from '../../Components/Footer/Footer';
 
 export default function Layout({ t, lang, changeLanguage }) {
     const [naviagationMenu, setNavigationMenu] = useState(false)
@@ -15,6 +15,18 @@ export default function Layout({ t, lang, changeLanguage }) {
     const navigate = useNavigate();
 
     const login = false
+
+    useEffect(() => {
+        if (naviagationMenu) {
+          document.body.style.overflow = 'hidden'; // Отключаем скролл
+        } else {
+          document.body.style.overflow = ''; // Включаем скролл обратно
+        }
+    
+        return () => {
+          document.body.style.overflow = ''; // Чистим эффект при размонтировании
+        };
+      }, [naviagationMenu]);
 
     const handleClick = () => {
         if (login) {
@@ -34,6 +46,7 @@ export default function Layout({ t, lang, changeLanguage }) {
                 <div className="mainContent">
                     <Outlet />
                 </div>
+                <Footer t={t} />
             </div>
         </div>
     )

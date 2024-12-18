@@ -36,16 +36,18 @@ export default function MobileNav({ t, open, setOpen, lang, changeLanguage }) {
                     <p className='navLinkText'>{t('bonuses')}</p>
                     <div className='navLine' style={{width: location.pathname === '/bonuses' ? '100%' : '0'}}></div>
                 </Link>
-                <Link to={'/certificates'} onClick={setOpen}>
+                {/* <Link to={'/certificates'} onClick={setOpen}>
                     <p className='navLinkText'>{t('certificates')}</p>
                     <div className='navLine' style={{width: location.pathname === '/certificates' ? '100%' : '0'}}></div>
-                </Link>
+                </Link> */}
                 <Link to={'/contacts'} onClick={setOpen}>
                     <p className='navLinkText'>{t('contacts')}</p>
                     <div className='navLine' style={{width: location.pathname === '/contacts' ? '100%' : '0'}}></div>
                 </Link>
             </div>
-            <Socials />
+            <div className="socialsContainer">
+                <Socials />
+            </div>
             <div className="changeLanguage">
                 <p>{t('language')} — <span onClick={changeLanguage} style={{color: lang === 'ru' ? '' : '#A6A6A6'}}>RU</span>, <span onClick={changeLanguage} style={{color: lang === 'en' ? '' : '#A6A6A6'}}>EN</span></p>
             </div>

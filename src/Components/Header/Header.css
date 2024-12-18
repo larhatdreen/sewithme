@@ -4,12 +4,17 @@ header {
 }
 
 .topHeader {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
     background: #E3E3E3;
     height: 60px;
     padding: 0 16px;
+}
+
+.topHeader a {
+    height: 20px;
 }
 
 .leftTopHeader {
@@ -20,4 +25,8 @@ header {
 
 .profileBtn {
     cursor: pointer;
+}
+
+.logoForHeader {
+    width: 120px;
 }
