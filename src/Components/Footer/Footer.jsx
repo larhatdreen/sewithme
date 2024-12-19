@@ -32,7 +32,7 @@ export default function Footer({ t }) {
         </div>
         <div className="footerContacts">
             <h2>{t('contacts')}</h2>
-            <p>{t('email')} — info@sewithme.com</p>
+            <p>{t('email')} — <a className='mailtoFooter' href="mailto:info@sewithme.com">info@sewithme.com</a></p>
             <Link to={''}>{t('privacy_policy')}</Link>
             <p>{t('IE')} {t('FIO')}</p>
             <p>{t('TIN')} 421716559204</p>

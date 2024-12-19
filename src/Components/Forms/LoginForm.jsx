@@ -52,18 +52,24 @@ export default function LoginForm({ t }) {
           <input
             className='formInput'
             type="email"
+            id='login_email'
+            name='email'
             placeholder={t('placeholder_email')}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            autoComplete="email"
             required
           />
           <div className='formPassword'>
             <input
                 className='formInput'
                 type={isPasswordVisible ? 'text' : 'password'}
+                id='password'
+                name='password'
                 placeholder={t('placeholder_password')}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                autoComplete="password"
                 required
             />
             <img 

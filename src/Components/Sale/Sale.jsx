@@ -18,16 +18,22 @@ export default function Sale({ t }) {
           <input 
             className='saleInput'
             type="name"
-            placeholder={t('placeholder_email')}
+            id='name'
+            name='name'
+            placeholder={t('placeholder_name')}
             value={name}
             onChange={(e) => setName(e.target.value)}
+            autoComplete="name"
           />
           <input
             className='saleInput'
             type="email"
+            id='email'
+            name='email'
             placeholder={t('placeholder_email')}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            autoComplete="email"
             required
           />
           <DefaultBtn type='sumbit' svg={arrow} alt='Кнопка для получения скидки на первую покупку'>

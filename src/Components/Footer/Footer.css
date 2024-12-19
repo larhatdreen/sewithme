@@ -68,6 +68,11 @@ footer h2 {
     font-size: 14px;
 }
 
+.mailtoFooter {
+    font-weight: 700;
+    color: #578CA7!important;
+}
+
 .explanation {
     display: flex;
     border-top: 1px solid #E3E3E3;

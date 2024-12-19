@@ -1,0 +1,60 @@
+.searchMenuOverlay {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    transition: 0.2s linear;
+}
+
+.searchMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    background: #F4F4F2;
+    border: 1px solid #e3e3e3;
+    border-radius: 0 0 20px 20px;
+    height: 160px;
+    padding: 0 16px;
+    transition: 0.3s cubic-bezier(0.72, 0.2, 0.35, 1.02);
+}
+
+.closeSearch {
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s cubic-bezier(0.72, 0.2, 0.35, 1.02);
+}
+
+.searchInputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: calc(100% - 60px);
+    background: #fff;
+    border-radius: 100px;
+    border: 1px solid #262626;
+    padding: 12px 30px;
+    transition: 0.3s cubic-bezier(0.72, 0.2, 0.35, 1.02);
+}
+
+.searchInput {
+    border: none;
+    width: 100%;
+    font-size: 24px;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchInput::placeholder {
+    color: #a6a6a6;
+}

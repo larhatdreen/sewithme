@@ -15,7 +15,7 @@ export default function MobileNav({ t, open, setOpen, lang, changeLanguage }) {
             <img src={close} alt="Закрыть навигационное меню" />
         </button>
         <div className="navContainer" style={{width: open ? '55%' : '0'}}>
-            <div className="Links">
+            <div className="Links" style={{transform: open ? '' : 'translateX(-100px)'}}>
                 <Link to={'/patterns'} onClick={setOpen}>
                     <p className='navLinkText'>{t('patterns')}</p>
                     <div className='navLine' style={{width: location.pathname === '/patterns' ? '100%' : '0'}}></div>
@@ -45,11 +45,11 @@ export default function MobileNav({ t, open, setOpen, lang, changeLanguage }) {
                     <div className='navLine' style={{width: location.pathname === '/contacts' ? '100%' : '0'}}></div>
                 </Link>
             </div>
-            <div className="socialsContainer">
+            <div className="socialsContainer" style={{transform: open ? '' : 'translateX(-100px)'}}>
                 <Socials />
             </div>
-            <div className="changeLanguage">
-                <p>{t('language')} — <span onClick={changeLanguage} style={{color: lang === 'ru' ? '' : '#A6A6A6'}}>RU</span>, <span onClick={changeLanguage} style={{color: lang === 'en' ? '' : '#A6A6A6'}}>EN</span></p>
+            <div className="changeLanguage" style={{transform: open ? '' : 'translateX(-100px)'}}>
+                <p>{t('language')} — <span onClick={() => changeLanguage('ru')} style={{color: lang === 'ru' ? '' : '#A6A6A6', cursor: 'pointer'}}>RU</span>, <span onClick={() => changeLanguage('en')} style={{color: lang === 'en' ? '' : '#A6A6A6', cursor: 'pointer'}}>EN</span></p>
             </div>
         </div>
     </div>

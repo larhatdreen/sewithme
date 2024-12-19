@@ -1,5 +1,5 @@
 import './App.css';
-// import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
@@ -18,6 +18,12 @@ import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language') || 'en'; // По умолчанию английский
+    i18n.changeLanguage(savedLanguage);
+  }, [i18n]);
+  
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang); 
     localStorage.setItem('language', lang);

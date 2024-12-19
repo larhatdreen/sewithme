@@ -30,3 +30,34 @@ header {
 .logoForHeader {
     width: 120px;
 }
+
+.rightTopHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.cartIconContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.itemsCount {
+    position: absolute;
+    right: -6px;
+    bottom: -5px;
+    background: #3E5461;
+    color: #fff;
+    border-radius: 100%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemsCount p {
+    font-size: 10px;
+    line-height: 7px;
+}

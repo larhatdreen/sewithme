@@ -1,5 +1,5 @@
 .overlay {
-    background: rgb(0, 0, 0, 0.2);
+    background: rgb(0, 0, 0, 0.5);
     position: absolute;
     width: 100%;
     transition: 0.3s linear;
@@ -32,6 +32,7 @@
     padding-bottom: 40px;
     padding-left: 16px;
     gap: 23px;
+    transition: 0.3s cubic-bezier(0.72, 0.2, 0.35, 1.02);
 }
 
 .Links a {
@@ -54,12 +55,14 @@
 .socialsContainer {
     padding-left: 16px;
     padding-bottom: 30px;
+    transition: 0.3s cubic-bezier(0.72, 0.2, 0.35, 1.02);
 }
 
 .changeLanguage {
     display: flex;
     align-items: center;
     padding-left: 16px;
+    transition: 0.3s cubic-bezier(0.72, 0.2, 0.35, 1.02);
 }
 
 .changeLanguage p {
