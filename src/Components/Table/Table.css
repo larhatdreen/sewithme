@@ -1,0 +1,23 @@
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 6px;
+  }
+  
+  .custom-table th, .custom-table td {
+    border: 0.29px solid #E3E3E3;
+    padding: 8px 0;
+  }
+  
+  .header-row {
+    background-color: #f5f5f3;
+  }
+  
+  .first-column {
+    width: 20%; /* 2x ширины остальных столбцов */
+  }
+  
+  .other-columns {
+    width: 10%;
+  }

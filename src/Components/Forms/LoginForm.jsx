@@ -81,8 +81,8 @@ export default function LoginForm({ t }) {
             <div className='hideAnimate' style={{height: isPasswordVisible ? '10px' : '0'}}></div>
           </div>
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        <DefaultBtn onClick={''} type='sumbit' svg={arrow} alt={'Зарегистрировать аккаунт'}>
-          {t('registration')}
+        <DefaultBtn onClick={''} type='sumbit' svg={arrow} alt={'Войти в аккаунт'}>
+          {t('login')}
         </DefaultBtn>
         <button className='forgotBtn' type="button" onClick={() => alert('Redirect to password recovery')}>{t('forgot_password')}</button>
       </form>

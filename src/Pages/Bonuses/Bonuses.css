@@ -1,0 +1,126 @@
+.bonusPage {
+    padding: 40px 16px;
+}
+
+.bonusProgram {
+    height: 172px;
+    display: flex;
+    align-items: center;
+    background: #F4F4F2;
+    border: 1px solid #E3E3E3;
+}
+
+.bonusProgramText {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 0 30px 25px;
+}
+
+.bonusProgramText p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #578CA7;
+}
+
+.bonusProgramText h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.bonusPhotoContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.bonusPhotoContainer img {
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(1.2);
+}
+
+.descriptionProgram {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 80px;
+}
+
+.descriptionProgram h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #262626;
+    line-height: 15px;
+}
+
+.descriptionProgram p {
+    font-size: 18px;
+    line-height: 23.4px;
+    color: #262626;
+}
+
+.basic_principles {
+    margin-top: 60px;
+    border: 2px solid #a6a6a6;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.basic_principles h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.basic_principles h2 span {
+    color: #578CA7;
+}
+
+.basic_principles_text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #262626;
+}
+
+.basic_principles_text h3 {
+    color: #578CA7;
+}
+
+.howUseBonus {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 120px;
+}
+
+.howUseBonus h2 {
+    color: #262626;
+    text-align: center;
+    width: 80%;
+}
+
+.howUseBonusText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    color: #262626;
+    line-height: 23px;
+}
+
+.howUseBonusText h3 {
+    color: #578CA7;
+}

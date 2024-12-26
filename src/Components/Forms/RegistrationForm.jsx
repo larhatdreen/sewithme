@@ -81,8 +81,8 @@ export default function RegistrationForm({ t }) {
             <div className='hideAnimate' style={{height: isPasswordVisible ? '10px' : '0'}}></div>
           </div>
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        <DefaultBtn onClick={''} type='sumbit' svg={arrow} alt={'Войти в аккаунт'}>
-          {t('login')}
+        <DefaultBtn onClick={''} type='sumbit' svg={arrow} alt={'Зарегестрировать аккаунт'}>
+          {t('registration')}
         </DefaultBtn>
         <p className='offert' >{t('offert')} <span>{t('PC')}</span></p>
       </form>
